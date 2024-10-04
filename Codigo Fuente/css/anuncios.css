@@ -1,0 +1,92 @@
+/* Normalización de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.contenido-anuncio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos el contenido */
+    margin-top: 2rem;
+}
+
+.precio {
+    color: green;
+    font-size: 3rem; /* Aumentamos el tamaño del precio */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    justify-content: center; /* Centramos los iconos */
+    gap: 3rem; /* Espaciado entre los iconos */
+    margin-bottom: 2rem;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem; /* Aumenta el tamaño del número al lado de los iconos */
+}
+
+.iconos-caracteristicas img {
+    width: 40px; /* Aumentamos el tamaño de los iconos */
+    margin-right: 0.5rem;
+}
+
+p {
+    max-width: 800px; /* Limita el ancho del texto para una mejor legibilidad */
+    margin-bottom: 1.5rem;
+    text-align: justify; /* Alinea el texto para que tenga un formato limpio */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}

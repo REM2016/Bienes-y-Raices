@@ -1,0 +1,89 @@
+/* Normalización de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.sobre-nosotros img {
+    max-width: 50%;
+    margin-right: 2rem; /* Reduce el margen derecho de la imagen */
+}
+
+.texto-nosotros {
+    max-width: 45%;
+}
+.texto-nosotros h3 {
+    margin-bottom: 1rem;
+}
+
+.texto-nosotros p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.icono {
+    text-align: center;
+    max-width: 30%;
+}
+
+.icono img {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.icono h3 {
+    margin-bottom: 1rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
