@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-propiedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.propiedad {
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.propiedad img {
+    width: 100%;
+}
+
+.contenido-propiedad {
+    padding: 1.5rem;
+}
+
+.contenido-propiedad h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenido-propiedad p {
+    margin-bottom: 1rem;
+}
+
+.precio {
+    color: green;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.iconos-caracteristicas img {
+    width: 24px;
+    margin-right: 0.5rem;
+}
+
+.boton {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: #ff9f1c;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton-amarillo {
+    background-color: #ff9f1c;
+}
+
+/*pie de pagina */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem; /* Añadimos padding en los lados */
+    display: flex;
+    justify-content: space-between; /* Mantener los elementos en una sola línea */
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem; /* Espaciado entre los enlaces */
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
+}
