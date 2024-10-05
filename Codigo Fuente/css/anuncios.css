@@ -7,7 +7,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
 }
 
 header {
@@ -34,12 +33,6 @@ main {
 
 h2 {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-img {
-    width: 100%;
-    height: auto;
     margin-bottom: 2rem;
 }
 
@@ -129,7 +122,7 @@ img {
     margin: 0;
     font-size: 0.85rem;
 }
-/* Ajuste del logo */
 .logo {
-    height: 50px;
+    height: 50px; /* Ajusta la altura según sea necesario */
+    width: auto;  /* Mantiene la proporción del logo */
 }

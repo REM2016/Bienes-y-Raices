@@ -134,3 +134,7 @@ textarea {
     font-size: 0.85rem;
 }
 
+.logo {
+    height: 50px; /* Ajusta la altura según sea necesario */
+    width: auto;  /* Mantiene la proporción del logo */
+}
