@@ -22,10 +22,22 @@ header {
     align-items: center;
 }
 
+/* Ajuste del logo */
+.logo {
+    height: 50px;
+}
+
 .navegacion a {
     color: white;
     text-decoration: none;
     margin-left: 1rem;
+}
+
+/* Centrar contenido del blog */
+.centrar-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -40,6 +52,8 @@ h2 {
 .entrada-blog {
     display: flex;
     margin-bottom: 2rem;
+    max-width: 800px;
+    /* Ajuste para centrar el contenido */
 }
 
 .entrada-blog img {
@@ -47,6 +61,26 @@ h2 {
     height: auto;
     margin-right: 2rem;
 }
+
+/*  línea verde más larga debajo de los títulos del blog */
+.texto-entrada h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.texto-entrada h3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px; /* Ajusta el ancho para hacer la línea más larga */
+    height: 4px; /* Grosor de la línea */
+    background-color: #4caf50; /* Color verde */
+}
+
+
 
 .texto-entrada {
     display: flex;
@@ -73,10 +107,36 @@ h2 {
     color: orange;
 }
 
+/* pie de página */
 .footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 1rem 2rem;
+    /* Añadimos padding en los lados */
+    display: flex;
+    justify-content: space-between;
+    /* Mantener los elementos en una sola línea */
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+    /* Espaciado entre los enlaces */
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
 }

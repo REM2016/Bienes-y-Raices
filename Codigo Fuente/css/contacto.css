@@ -102,10 +102,35 @@ textarea {
     background-color: #6aa52d;
 }
 
+/*pie de pagina */
+
 .footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
+    padding: 1rem 2rem; /* Añadimos padding en los lados */
+    display: flex;
+    justify-content: space-between; /* Mantener los elementos en una sola línea */
+    align-items: center;
 }
+
+.footer-nav {
+    display: flex;
+    gap: 2rem; /* Espaciado entre los enlaces */
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+

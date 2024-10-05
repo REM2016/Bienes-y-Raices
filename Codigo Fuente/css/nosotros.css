@@ -39,18 +39,20 @@ h2 {
 .sobre-nosotros {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem; /* Ajusta el espacio entre la imagen y el texto */
+    justify-content: flex-start; /* Asegura que todo esté alineado hacia la izquierda */
+    gap: 0; /* Elimina el espacio entre la imagen y el texto */
 }
 
 .sobre-nosotros img {
-    max-width: 50%;
-    margin-right: 2rem; /* Reduce el margen derecho de la imagen */
+    max-width: 45%; /* Ajusta el ancho de la imagen para darle más espacio al texto */
+    margin-right: 1rem; /* Deja un pequeño margen a la derecha de la imagen */
 }
 
 .texto-nosotros {
-    max-width: 45%;
+    max-width: 50%; /* Asegura que el texto ocupe el espacio restante */
 }
+
+
 .texto-nosotros h3 {
     margin-bottom: 1rem;
 }
@@ -87,3 +89,4 @@ h2 {
     padding: 1rem;
     margin-top: 3rem;
 }
+

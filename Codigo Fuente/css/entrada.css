@@ -8,8 +8,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
 }
 
+/* Encabezado */
 header {
     background-color: #333;
     color: white;
@@ -28,74 +30,52 @@ header {
     margin-left: 1rem;
 }
 
+/* Estilos principales */
 main {
-    padding: 2rem;
-}
-
-h2 {
+    margin-top: 0;
     text-align: center;
+}
+
+/* Imagen estirada a los lados */
+.imagen-entrada {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: auto; /* Mantiene la proporción */
+    max-height: 500px; /* Limita la altura máxima */
+    object-fit: cover; /* Estira la imagen a los lados sin distorsionarla */
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo del título para que mantenga una sola línea */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Meta información */
+.informacion-meta {
+    color: #6b6b6b;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
+.informacion-meta span {
+    color: orange;
 }
 
-/* Contenedor para precio e iconos */
-.contenido-anuncio {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-}
-
-/* Alineamos el precio y los iconos en la misma línea */
-.precio-iconos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%; /* Hacemos que ocupe todo el ancho */
-    max-width: 800px; /* Limita el ancho del bloque */
-    margin-bottom: 2rem;
-}
-
-.precio {
-    color: green;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.iconos-caracteristicas {
-    display: flex;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-}
-
-.iconos-caracteristicas li {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-.iconos-caracteristicas img {
-    width: 30px;
-    margin-right: 0.5rem;
-}
-
-/* Ajustamos el texto */
-.texto-anuncio {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.texto-anuncio p {
+/* Párrafos */
+p {
     text-align: justify;
     margin-bottom: 1.5rem;
+    color: #6b6b6b;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*pie de pagina */
@@ -129,7 +109,13 @@ img {
     margin: 0;
     font-size: 0.85rem;
 }
-/* Ajuste del logo */
-.logo {
-    height: 50px;
+
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .navegacion a {
+        display: block;
+        margin: 0.5rem 0;
+    }
 }
+
